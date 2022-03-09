@@ -12,7 +12,9 @@ jobs:
           python-version: '3.8'
           
       - name: Install mkdocs
-        run: pip install mkdocs-material
+        run: |
+          pip install mkdocs-material
+          pip freeze
       
       - name: Build
         run: mkdocs build
