@@ -23,3 +23,7 @@ def bubble_sort(items):
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+# Add new doc
+
+This is blah blah blah
