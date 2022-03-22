@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/jmborsani/github-learning/compare/v1.0.0...v1.1.0) (2022-03-22)
+
+
+### Features
+
+* add new doc ([bf0a73f](https://github.com/jmborsani/github-learning/commit/bf0a73fd3f1e9d8f729085b3318faadb3860ec8b))
+
 ## 1.0.0 (2022-03-22)
 
 
