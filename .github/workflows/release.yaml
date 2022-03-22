@@ -2,10 +2,9 @@ name: Release
 
 on:
   workflow_dispatch:
-  push:
+  pull_request:
     branches:
-      - main
-      - master
+      - release/v*
     paths:
       - '**/*.yaml'
       - '**/*.md'
