@@ -12,7 +12,9 @@ echo New branch...
 git checkout -b feat/new-branch-${rand_num}
 
 echo Updating...
-echo Some text ${rand_num} >> ./docs/index.md
+echo "Some text ${rand_num}" >> ./docs/index.md
+
+read
 
 echo Adding any changes in the project...
 git add .
