@@ -4,12 +4,11 @@ on:
   workflow_dispatch:
   pull_request:
     branches:
-      - release/v*
+      - release/**
     paths:
       - '**/*.yaml'
       - '**/*.md'
       - '.github/workflows/release.yml'
-
 jobs:
   release:
     name: Release
