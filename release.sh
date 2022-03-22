@@ -25,7 +25,7 @@ echo Pushing changes to remote branch...
 git push origin feat/new-branch-$rand_num
 
 echo Create a new PR
-gh pr create --title "feat: add new doc" --body "Everything works again" --base feat/new-branch-$rand_num
+gh pr create --title "feat: add new doc" --body "Everything works again"
 
 echo Making a squash/merge...
 gh pr merge -t 'feat: add new doc' --body 'merge pr' --squash --delete-branch
