@@ -18,6 +18,11 @@ jobs:
       - uses: actions/checkout@v2  
       
       - name: Run
+        env:
+          ENV_SECRET_LOCAL: ${{ secrets.ENV_SECRET }}
         run: |
           echo RUN
           env
+          echo ENV_SECRET: $ENV_SECRET  
+          echo ENV_SECRET_LOCAL: $ENV_SECRET_LOCAL
+          echo MINHA_SECRET: $MINHA_SECRET
