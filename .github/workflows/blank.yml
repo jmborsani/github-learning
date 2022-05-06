@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 env:
-  ENV_ZIP: ${{ secrets.MINHA_SECRET }}
+  MINHA_SECRET_PAI: ${{ secrets.MINHA_SECRET }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

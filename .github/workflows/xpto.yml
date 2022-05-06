@@ -20,9 +20,13 @@ jobs:
       - name: Run
         env:
           ENV_SECRET_LOCAL: ${{ secrets.ENV_SECRET }}
+          MINHA_SECRET_PAI_LOCAL: ${{ secrets.MINHA_SECRET_PAI }}
+          MINHA_SECRET_LOCAL: ${{ secrets.MINHA_SECRET }}
         run: |
           echo RUN
           env
           echo ENV_SECRET: $ENV_SECRET  
           echo ENV_SECRET_LOCAL: $ENV_SECRET_LOCAL
           echo MINHA_SECRET: $MINHA_SECRET
+          echo MINHA_SECRET_PAI_LOCAL: $MINHA_SECRET_PAI_LOCAL
+          echo MINHA_SECRET_LOCAL: $MINHA_SECRET_LOCAL
