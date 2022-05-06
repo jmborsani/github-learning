@@ -1,0 +1,23 @@
+name: deploy-infra-app-homolog
+
+on:
+  workflow_call:
+
+    inputs:
+      my_env:
+        type: string
+        required: true
+
+env:
+  OUTRA_ENV: BLEH
+
+jobs:
+  deploy-homolog:
+    runs-on: ubuntu
+    steps:
+      - uses: actions/checkout@v2  
+      
+      - name: Run
+        shell:
+          echo RUN
+          env

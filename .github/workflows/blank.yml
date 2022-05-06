@@ -76,8 +76,9 @@ jobs:
           env
 
   deploy-app:
-    uses: jmborsani/github-learning/.github/workflows/blank.yml@feat/pipelines
+    uses: jmborsani/github-learning/.github/workflows/xpto.yml@feat/pipelines
     with:
+      my_env: XPTO
       SASL_USERNAME: ${{ secrets.MINHA_SECRET }}
       SASL_PASSWORD: ${{ secrets.MINHA_SECRET }}
     secrets: inherit
