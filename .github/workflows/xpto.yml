@@ -14,6 +14,7 @@ env:
 jobs:
   deploy-homolog:
     runs-on: ubuntu-latest
+    environment: homolog
     steps:
       - uses: actions/checkout@v2  
       
