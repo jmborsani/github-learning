@@ -18,6 +18,11 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  export-envs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo 'MINHA_ENV_EXPORTED=XPTO' >> $GITHUB_ENV
 
   deploy-app:
     uses: jmborsani/github-learning/.github/workflows/xpto.yml@feat/pipelines
