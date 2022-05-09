@@ -24,7 +24,10 @@ jobs:
           MINHA_SECRET_PAI_LOCAL: ${{ secrets.MINHA_SECRET_PAI }}
           MINHA_SECRET_LOCAL: ${{ secrets.MINHA_SECRET }}
         run: |
-          echo RUN
+          for i in $(cat $GITHUB_ENV); do
+            echo $i
+            export $i
+          done
           env
           echo GITHUB: $GITHUB_ENV
           echo ENV_SECRET: $ENV_SECRET  
