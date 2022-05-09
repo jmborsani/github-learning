@@ -23,5 +23,4 @@ jobs:
     uses: jmborsani/github-learning/.github/workflows/xpto.yml@feat/pipelines
     with:
       my_env: XPTO
-    secrets:
-      ENV_SECRET: ${{ secrets.ENV_SECRET }}
+    secrets: inherit
