@@ -32,4 +32,5 @@ jobs:
           echo MINHA_SECRET: $MINHA_SECRET
           echo MINHA_SECRET_PAI_LOCAL: $MINHA_SECRET_PAI_LOCAL
           echo MINHA_SECRET_LOCAL: $MINHA_SECRET_LOCAL
-          cat $GITHUB_ENV
+          echo Cat GITHUB_ENV
+          cat "${GITHUB_ENV}"
