@@ -35,5 +35,6 @@ jobs:
           echo MINHA_SECRET: $MINHA_SECRET
           echo MINHA_SECRET_PAI_LOCAL: $MINHA_SECRET_PAI_LOCAL
           echo MINHA_SECRET_LOCAL: $MINHA_SECRET_LOCAL
+          echo MINHA_ENV_EXPORTED: $MINHA_ENV_EXPORTED
           echo Cat GITHUB_ENV
           cat "${GITHUB_ENV}"
