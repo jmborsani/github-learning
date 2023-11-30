@@ -27,3 +27,6 @@ jobs:
     
       - name: Print
         run: echo helmfile -e ${{ inputs.env }} apply
+
+      - name: List files
+        run: ls -la
