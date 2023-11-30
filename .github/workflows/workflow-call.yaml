@@ -16,7 +16,7 @@ on:
 
 jobs:
   deploy-homolog:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout ${{ inputs.app }} to ${{ inputs.tag }}
         uses: actions/checkout@v3
