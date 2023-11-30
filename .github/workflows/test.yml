@@ -18,9 +18,18 @@ env:
   allowed_users: '["xpto", "jmborsani2"]'
 
 jobs:
+  check:
+    name: Check  
+    uses: actions/github-script@v7
+    with:
+      script: |
+        console.log(context)
+        # if contains(fromJSON(env.allowed_users), context.github.actor) {
+
+        # }
+
   setup:
     name: Setup
-    if: contains(fromJSON(${{ env.allowed_users }}), github.actor)
     uses: ./.github/workflows/workflow-call.yaml
     with:
       tag: ${{ inputs.tag }}
