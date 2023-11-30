@@ -14,8 +14,6 @@ on:
         type: string
         required: true
 
-env:
-
 jobs:
   deploy-homolog:
     runs-on: ubuntu
