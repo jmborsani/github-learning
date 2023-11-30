@@ -14,6 +14,10 @@ on:
         options: [homolog, sandbox]
         default: homolog
 
+      migration:
+        description: Was a Database migration executed?
+        type: boolean
+        required: true
 jobs:
   setup:
     name: Setup
