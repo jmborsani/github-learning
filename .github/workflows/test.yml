@@ -17,7 +17,7 @@ on:
 jobs:
   setup:
     name: Setup
-    uses: ./.github/workflows/teste/workflow-call.yaml
+    uses: ./.github/workflows/workflow-call.yaml
     with:
       tag: ${{ inputs.tag }}
       env: "dev"
