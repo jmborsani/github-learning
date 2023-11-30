@@ -14,10 +14,13 @@ on:
         options: [homolog, sandbox]
         default: homolog
 
+env:
+  allowed_users: '["xpto", "jmborsani2"]'
+
 jobs:
   setup:
     name: Setup
-    if: contains(fromJSON('["xpto", "jmborsani2"]'), github.actor)
+    if: ${{ contains(fromJSON(env.allowed_users), github.actor) }}
     uses: ./.github/workflows/workflow-call.yaml
     with:
       tag: ${{ inputs.tag }}
