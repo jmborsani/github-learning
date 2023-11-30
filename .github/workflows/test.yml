@@ -20,7 +20,7 @@ env:
 jobs:
   setup:
     name: Setup
-    if: contains(fromJSON(vars.allowed_users), github.actor)
+    if: contains(fromJSON(${{ env.allowed_users }}), github.actor)
     uses: ./.github/workflows/workflow-call.yaml
     with:
       tag: ${{ inputs.tag }}
