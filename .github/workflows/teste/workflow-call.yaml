@@ -1,0 +1,29 @@
+name: deploy-app-homolog
+
+on:
+  workflow_call:
+
+    inputs:
+      tag:
+        type: string
+        required: true
+      env:
+        type: string
+        required: true
+      app:
+        type: string
+        required: true
+
+env:
+
+jobs:
+  deploy-homolog:
+    runs-on: ubuntu
+    steps:
+      - name: Checkout ${{ inputs.app }} to ${{ inputs.tag }}
+        uses: actions/checkout@v3
+        with:
+            ref: ${{ inputs.tag }}
+    
+      - name: Print
+        run: echo helmfile -e ${{ inputs.env }} apply

@@ -17,7 +17,9 @@ on:
 jobs:
   setup:
     name: Setup
-    runs-on: ubuntu
-    steps:
-      - run: echo ola mundo
-        name: Print text
+    uses: .github/workflows/teste/workflow-call.yaml
+    with:
+      tag: ${{ inputs.tag }}
+      env: "dev"
+      app: "my-app"
+
