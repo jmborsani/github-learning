@@ -17,7 +17,7 @@ on:
 jobs:
   setup:
     name: Setup
-    if: contains(fromJSON('["joao", "jmborsani"]'), github.actor)
+    if: contains(fromJSON('["xpto", "jmborsani2"]'), github.actor)
     uses: ./.github/workflows/workflow-call.yaml
     with:
       tag: ${{ inputs.tag }}
