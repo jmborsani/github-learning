@@ -18,9 +18,11 @@ on:
         description: Was a Database migration executed?
         type: boolean
         required: true
+
 jobs:
   setup:
     name: Setup
+    if: contains(fromJSON('["joao", "jmborsani"]'), github.actor)
     uses: ./.github/workflows/workflow-call.yaml
     with:
       tag: ${{ inputs.tag }}
