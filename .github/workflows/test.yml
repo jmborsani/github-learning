@@ -1,0 +1,23 @@
+---
+name: Rollback
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag
+        type: string
+
+      env:
+        description: Environment
+        type: choice
+        options: [homolog, sandbox]
+        default: homolog
+
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu
+    steps:
+      - run: echo ola mundo
+        name: Print text
