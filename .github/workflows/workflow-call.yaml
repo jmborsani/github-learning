@@ -13,10 +13,7 @@ on:
       app:
         type: string
         required: true
-      migration:
-        description: Was a Database migration executed?
-        type: boolean
-        required: true
+
 jobs:
   deploy-homolog:
     runs-on: ubuntu-latest
